@@ -1,42 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_item"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
-
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/btn_red"
+    android:layout_marginBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:id="@+id/pokemon_image"
-        android:src="@drawable/pokemon_logo_min"
-        android:layout_gravity="center"
-        />
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_pokeball"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimaryText"
-        android:text="Pokemon"
-        android:gravity="center"
-        android:padding="16dp"
+        android:textSize="12sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:id="@+id/pokemon_name"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        tools:text="Ratata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pokemon_name"
+        app:layout_constraintStart_toEndOf="@+id/pokemon_name"
+        android:id="@+id/pokemon_image"
+        android:src="@drawable/ic_question"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/colorAccent"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="8dp"
-        />
-
-
-
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

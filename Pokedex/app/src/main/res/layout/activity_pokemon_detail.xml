@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.Activities.PokemonDetailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_red"
+            android:padding="12dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:padding="12dp"
+                android:id="@+id/btnBackDetail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/ic_back_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtNamePokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Pikachu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_poke_splash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        <TextView
+            android:id="@+id/txtNumberId"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000000"
+            android:layout_marginStart="4dp"
+            tools:text="000"
+            app:layout_constraintBottom_toBottomOf="@+id/img1"
+            app:layout_constraintTop_toTopOf="@+id/img1"
+            app:layout_constraintStart_toEndOf="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgPokemonDetail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+        <LinearLayout
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imgPokemonDetail"
+            android:background="@drawable/btn_grayblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:background="@drawable/btn_red"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"
+                    android:text="Peso:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/txtWeight"
+                    tools:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="8dp"
+                android:background="@drawable/btn_red"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"
+                    android:text="Altura:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/txtHeight"
+                    tools:text="00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/btn_red"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:text="Movimientos \ndel Pokemón:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:id="@+id/txtMoves"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="8dp"
+                    android:background="@drawable/btn_red"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:text="Estadísticas: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:id="@+id/txtStats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:text="Tipo de Pokemón: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/white"
+                        android:id="@+id/txtType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

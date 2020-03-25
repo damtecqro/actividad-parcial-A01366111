@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E33350</color>
-    <color name="colorPrimaryDark">#DD082B</color>
+    <color name="colorPrimary">#DE5555</color>
+    <color name="colorPrimaryDark">#DE5555</color>
     <color name="colorPrimaryLight">#D38E99</color>
     <color name="colorAccent">#0A6DCB</color>
     <color name="colorPrimaryText">#222222</color>
@@ -13,4 +13,6 @@
 
     <color name="rojo">#E33350</color>
     <color name="naranja">#EF5534</color>
+
+    <color name="white">#FFFFFF</color>
 </resources>

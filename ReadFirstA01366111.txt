@@ -1,0 +1,9 @@
+Javier Iñiguez Quezada - A01366111
+
+//Puede entrar con cualquier usario y contraseña, Mientras no esté vacío los campos
+
+¿Qué fue lo que más se te facilitó de la implementación de la vista? 
+El uso de constraints como padre de los LinearLayout y relativeLayout.
+
+¿Qué fue lo que más se te dificultó de la implementación de la vista?
+Literal el diseño del detalle, no se me ocurría qué podría usar sin que se viera saturada la vista, e intenté hacerlo lo más limpio posible.
